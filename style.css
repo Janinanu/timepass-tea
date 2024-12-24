@@ -1,4 +1,4 @@
-/* General Styles */
+/* Apply the Dancing Script font */
 body {
     margin: 0;
     padding: 0;
@@ -8,39 +8,21 @@ body {
     text-align: center;
 }
 
-/* Header Styles */
+/* Header */
 header h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-top: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
 }
 
-/* Image Gallery Section */
-.image-gallery {
-    display: flex;
-    flex-wrap: wrap; /* Wrap images on smaller screens */
-    justify-content: center;
-    gap: 20px; /* Space between images */
-    margin: 20px auto;
-    max-width: 90%; /* Constrain gallery width */
-}
-
-/* Individual Images */
-.image-gallery img {
-    max-width: 45%; /* Take up less than half width */
-    height: auto;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
-}
-
-/* Hover Effect */
-.image-gallery img:hover {
-    transform: scale(1.05); /* Slight zoom-in on hover */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5); /* Enhance shadow */
-}
-
-/* Main Paragraph */
-main p {
-    font-size: 1.5em;
-    margin: 20px;
+/* Intro text below the headline */
+.intro-text {
+    font-size: 1.4em;
+    font-weight: 400;
+    max-width: 750px; /* Limit the width of the text */
+    margin: 20px auto; /* Center the text */
+    padding: 0 20px; /* Add space on the sides */
+    line-height: 1.6; /* Improve readability */
+    color: white;
 }
