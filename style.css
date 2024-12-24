@@ -26,3 +26,29 @@ header h1 {
     line-height: 1.6; /* Improve readability */
     color: white;
 }
+
+/* Image Section */
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Space between images */
+    margin-top: 40px;
+}
+
+.images .image {
+    max-width: 45%; /* Limit the size of the images */
+    height: auto;
+    border-radius: 8px; /* Optional: to give the images rounded corners */
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .images {
+        flex-direction: column; /* Stack images vertically on smaller screens */
+        gap: 20px;
+    }
+
+    .images .image {
+        max-width: 80%; /* Resize images for smaller screens */
+    }
+}
